@@ -16,3 +16,7 @@ Materialın növü aid olduğu qovluğun içərisində aşağıdakı şəkildə 
   - `task.md` yeni tapşırıq üçün nəzərdə tutulub (həllər isə `solution.md` sənədində daxil olunmalıdır)
 
 Bu sənədlərin hər biri `# Əsas başlıq` sözləri ilə başlamalıdır.
+
+## İnkişaf mühiti
+
+Lokal inkişaf mühitini qurmaq və dəyişiklikləri real vaxt rejimində izləmək üçün İlya Kantora (@iliakan) məxsus [https://github.com/iliakan/javascript-tutorial-server.git](https://github.com/iliakan/javascript-tutorial-server.git) deposundan istifadə etməyiniz xahiş olunur. 
