@@ -1,13 +1,13 @@
 # JavaScript Dərsləri
 
-This repository hosts the content of the Modern JavaScript Tutorial, published at [https://javascript.info](https://javascript.info).
+Bu depo [https://javascript.info](https://javascript.info) saytının məzmununu özündə saxlayır və onun Azərbaycan dilinə tərcüməsidir.
 
 
 ## Struktur
 
 Hər fəsil, məqalə və tapşırıqların özünə aid qovluğu olmalıdır.
 
-The folder is named like `N-url`, where `N` is a number for the sorting purposes and `url` is the URL part with title of the material.
+Hər bir qovluq `N-url` şəklində adlandırılmalıdır. Burada `N` ixtiyari bir ədəd olub sıralama məqsədləri üçün istifadə olunur, `url` isə işlədiyiniz materialın adını təyin edir.
 
 Materialın növü aid olduğu qovluğun içərisində aşağıdakı şəkildə təyin olunur:
 

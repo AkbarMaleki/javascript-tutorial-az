@@ -1,3 +1,3 @@
-# An introduction
+# Giriş
 
-About the JavaScript language and the environment to develop with it.
+JavaScript və onun mühiti haqqında ümumi məlumat.
