@@ -1,26 +1,18 @@
-# The JavaScript Tutorial
+# JavaScript Dərsləri
 
 This repository hosts the content of the Modern JavaScript Tutorial, published at [https://javascript.info](https://javascript.info).
 
 
-`*` – the previous version is published in Russian, need to backport/translate the new one from English.
+## Struktur
 
-If you'd like to translate it into your language, please clone the repository, change its name to `javascript-tutorial-...` (by the language) and [create an issue](https://github.com/iliakan/javascript-tutoria-en/issues/new) for me to add you to the list.
-
-You can edit the text in any editor (markdown-like syntax). The server to run the tutorial locally and see how it looks is at <https://github.com/iliakan/javascript-tutorial-server>.  
-
-
-
-## Structure
-
-Every chapter, article or a task has its folder.
+Hər fəsil, məqalə və tapşırıqların özünə aid qovluğu olmalıdır.
 
 The folder is named like `N-url`, where `N` is a number for the sorting purposes and `url` is the URL part with title of the material.
 
-The type of the material is defined by the file inside the folder:
+Materialın növü aid olduğu qovluğun içərisində aşağıdakı şəkildə təyin olunur:
 
-  - `index.md` stands for a chapter
-  - `article.md` stands for an article
-  - `task.md` stands for a task (solution must be provided in `solution.md` file aswell)
+  - `index.md` yeni fəsil üçün
+  - `article.md` yeni məqalə üçün
+  - `task.md` yeni tapşırıq üçün nəzərdə tutulub (həllər isə `solution.md` sənədində daxil olunmalıdır)
 
-Each of these files starts from the `# Main header`.
+Bu sənədlərin hər biri `# Əsas başlıq` sözləri ilə başlamalıdır.
