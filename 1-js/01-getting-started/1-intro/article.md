@@ -1,18 +1,18 @@
 # JavaScriptə giriş
 
-Let's see what's so special about JavaScript, what we can achieve with it, and which other technologies play well with it.
+Gəlin JavaScriptin niyə belə xüsusi olduğuna, onunla nələrə nail olacağımıza və onun hansı texnologiyalarla uzlaşdığına baxaq.
 
-## What is JavaScript?
+## JavaScript nədir?
 
-*JavaScript* was initially created to *"make web pages alive"*.
+*JavaScript* ilkin olaraq *"web səhifələri canlandırmaq"* üçün yaradılmışdır.
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and executed automatically as the page loads.
+Bu dildə yazılan proqramlar *skript* adlanır. Həmin skriptlər bir başa olaraq HTML səhifənin içərisində yazıla və səhifə yeniləndiyində avtomiatik işə düşə bilər.
 
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+Skriptlər təmiz mətn şəklində yazılır və icra olunur. Belə ki, onların xüsusi hazırlığa və ya kompilyasiya mərhələsinə ehtiyacı yoxdur.
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
+Bu nöqteyi nəzərdən, JavaScript, çox vaxt özünə bənzədilən və məşhur bir proqramlaşdırma dili olan [Java](https://en.wikipedia.org/wiki/Java_(programming_language))dan olduqca fərqlənir.
 
-```smart header="Why <u>Java</u>Script?"
+```smart header="Niyə <u>Java</u>Script?"
 When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
 
 But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
@@ -79,23 +79,24 @@ Examples of such restrictions include:
 
 Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.
 
-## What makes JavaScript unique?
+## JavaScripti ünikal edən nədir?
 
-There are at least *three* great things about JavaScript:
+JavaScript dilini əvəzedilməz edən ən az *üç* cəhət var:
 
 ```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Support by all major browsers and enabled by default.
++ HTML/CSS ilə tam inteqrasiya bacarığı.
++ Sadə şeyləri asanlıqla həll edə bilmək.
++ Əksər brauzerlər tərəfindən dəstəklənməsi və defolt olaraq aktiv olması.
 ```
-Javascript is the only browser technology that combines these three things.
+
+JavaScript bu üç xüsusiyyəti özündə birləşdirən yeganə brauzer texnologiyasıdır.
 
 That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
 
 While planning to learn a new technology, it's beneficial to check its perspectives. So let's move on to the modern trends affecting it,  including new languages and browser abilities.
 
 
-## Languages "over" JavaScript
+## JavaScript "üzərindən" dillər
 
 The syntax of JavaScript does not suit everyone's needs. Different people want different features.
 
@@ -113,8 +114,8 @@ Examples of such languages:
 
 There are more. Of course, even if we use one of these languages, we should also know JavaScript to really understand what we're doing.
 
-## Summary
+## Xülasə
 
-- JavaScript was initially created as a browser-only language, but is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+- JavaScript ilkin olaraq yalnız brauzerlərdə işləməyi üçün yaradılmışdır, lakin indi o web server, IoT və s. kimi bir çox mühitlərdə istifadə olunur.
+- Günümüzdə JavaScript brauzer mühitində ən çox istifadə olunan bir dil kimi unikal mövqe tutmuşdur və HTML/CSS ilə tam inteqrasiya oluna bilir.
+- Bir başa JavaScriptə "transpilyasiya" oluna bilən bir çox dil mövcuddur. JavaScript ilə bir qədər təcrübəniz olduqdan sonra onlara da nəzər yetirməyiniz məsləhət görülür.
