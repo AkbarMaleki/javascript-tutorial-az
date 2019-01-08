@@ -13,51 +13,52 @@ Skriptlər təmiz mətn şəklində yazılır və icra olunur. Belə ki, onları
 Bu nöqteyi nəzərdən, JavaScript, çox vaxt özünə bənzədilən və məşhur bir proqramlaşdırma dili olan [Java](https://en.wikipedia.org/wiki/Java_(programming_language))dan olduqca fərqlənir.
 
 ```smart header="Niyə <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
 
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+JavaScript ilk dəfə yaradılarkən onun başqa bir adı var idi: "LiveScript". Lakin o dövrdə (1995) Java daha məşhur olduğu üçün, bu dilə Javanın "kiçik qardaşı" kimi yanaşmaq qərarı verildi.
+
+Lakin qısa bir müddət sonra JavaScript, özünə məxsus, [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript) adlı standartlara sahib olan müstəqil bir dilə çevrildi və hazırda Java ilə demək olar ki, heç bir əlaqəsi yoxdur.
 ```
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+Günümüzdə isə JavaScript sadəcə brauzer mühitində deyil, serverdə və [JavaScript mühərriki](https://en.wikipedia.org/wiki/JavaScript_engine) quraşdırılmış istənilən qurğuda icra oluna bilir.
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+Brauzerlər "JavaScript virtual maşını" adlı daxili mühərrikə sahibdirlər.
 
-Different engines have different "codenames". For example:
+Müxtəlif şirkətlər tərəfindən hazırlaşnmış bu cür mühərriklərin müxtəlif "kod adları" var. Misalçün:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Trident" and "Chakra" for different versions of IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- Chrome və Opera'da.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- Firefox'da.
+- ...Bu adlara Internet Explorer'in tərkibində olan "Tridient" və "Chakra", Microsoft Edge'in tərkib hissəsi olan "ChakraCore" və Safari brauzerindəki "Nitro" və "SquirrelFish" də daxildir.
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+Yuxarıda qeyd etdiyimiz terminlərlə bir çox məqalələrdə və bloqlarda rastalaşacağınız üçün, onları yadda saxlamağınız məsləhətlidir. Misalçün, əgər *"filan özəllik V8 tərəfindən dəstəklənmir"* deyildiyində biz artıq həmin funksionallığın Opera və Chrome'da heç bir işə yaramayacağını bilmiş olacağıq.
 
-```smart header="How do engines work?"
+```smart header="Mühərriklər necə işləyir?"
 
-Engines are complicated. But the basics are easy.
+JavaScript mühərrikləri olduqca qəliz bir quruluşa malikdirlər. Lakin təməl məfhumlar sadədir.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to the machine language.
-3. And then the machine code runs, pretty fast.
+1. Mühərrik skriptləri oxuyur və təhlil edir.
+2. Daha sonra həmin skriptləri maşın koduna çevirir.
+3. Və son olaraq həmin kodlar sizin kompüteriniz tərəfindən icra olunur.
 
-The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and applies optimizations to the machine code based on that knowledge. When it's done, scripts run quite fast.
+Mühərriklər sadəcə bununla kifayətlənməyib, hər mərhələdə bir çox optimallaşdırma işləri aparırlar. Onlar maşın koduna çevrilmiş (kompilyasiya olunmuş) sktriprləri analiz edir və əldə olunan biliklərə əsasən həmin maşın kodunu da optimallaşdırmağa çalışırlar. Bu mərhələlərdən sonra skriptlər daha sürətli icra olunmağa başlayır.
 ```
 
-## What can in-browser JavaScript do?
+## JavaScrip brauzer daxilində nələrə qadirdir?
 
-Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+Müasir JavaScipt olduqca "güvənli" dildir. Belə ki, o, ilkin olaraq brauzer daxilində istifadə olunduğu üçün daxili yaddaş və prosessora bir başa çıxış imkanı vermir.
 
-Javascript's capabilities greatly depend on the environment it's running in. For instance, [Node.JS](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
+Buna baxmayaraq JavaScriptin qabiliyyətləri onun işlədiyi mühittən də çox asılıdır. Misalçün [Node.JS](https://wikipedia.org/wiki/Node.js) JavaScript üçün sənədləri oxuyub yazmaq, şəbəkə səviyyəli sorğular göndərmək və s. kimi əlavə imkanlar yaradır.
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+JavaScript brauzer daxilində web səhifənin manipulyasiyası ilə bağlı hər şeyi etmək bacarığına malikdir. Buraya istifadəçi ilə qarşılıqla təsirdə olmaq, web serverə sorğu göndərmək və digər mühüm funksionallırlar daxildir.
 
-For instance, in-browser JavaScript is able to:
+Misalçün, bzauzer daxilində JavaScript aşağıdakı funksionallıqlara malikdir:
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
+- Səhifəyə yeni HTML əlavə etmək, mövcud məzmunu dəyişmək və CSS stillərini dəyişmək.
+- İstifadəçinin hərəkərlərinə reaksiya göstərmək, siçanın sağ və ya sol düyməsi klikləndiyində, kursor hərəkət etidiyində, hər hansı bir düymə sıxıldığında və s. müəyyən kodlar icra etmək.
+- Şəbəkə üzərindən sorğular göndərmək, sənədləri yükləmək və endirmək ([AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) və [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) texnologiyaları vasitəsilə). 
+- Çərəzləri (cookie) təyin etmək və əladə etmək, istifadəçiyə sual vermək və mesajlar göstərmək.
+- İstifadəçi haqqında məlumatları, onun seçimlərini və s. yadda saxlamaq ("local storage").
 
-## What CAN'T in-browser JavaScript do?
+## JavaScript brauzer daxilində nələri EDƏ BİLMƏZ?
 
 JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
 
