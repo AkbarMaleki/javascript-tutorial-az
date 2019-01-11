@@ -70,7 +70,7 @@ Bu məhdudiyyətlərə nümunə kimi aşağıdakıları göstərmək olar:
 
     Bundan əlavə, brauzerlər yalnız istifadəçinin icazəsi olduğu halda kamera, mikrofon və digər qurğularla işləməyə də imkan yaradır. Bu səbəbdən əminliklə deyə bilərik ki, hər hansı bir web səhifə sizin haqqınızda səsyazma və görüntüləri toplayıb daha sonra [DTX](https://az.wikipedia.org/wiki/Azərbaycanın_Dövlət_Təhlükəsizliyi_Xidməti)-yə göndərmir.
 
-- Müxtəlif pəncərələr bir çox hallarda bir biri haqqında xəbərsiz olurlar. Bəzən isə xəbərdar olurlar, misalçün əgər bir pəncərədəki JavaScript digər səhifəni açmaq üçün istifadə olunursa. Lakin bu halda belə, həmin pəncərələr müxtəlif saytlardan gəlirsə, bir səhifədəki skript digər səhifədə icra oluna və ya orda dəyişikliklər edə bilməz (əgər həmin pəncərələr müxtəlif domenldən və portdan gəlir və ya fərqli protokollardan istifadə edirsə). 
+- Müxtəlif pəncərələr bir çox hallarda bir biri haqqında xəbərsiz olurlar. Bəzən isə xəbərdar olurlar, misalçün əgər bir pəncərədəki JavaScript digər səhifəni açmaq üçün istifadə olunursa. Lakin bu halda belə, həmin pəncərələr müxtəlif saytlardan gəlirsə, bir səhifədəki skript digər səhifədə icra oluna və ya orda dəyişikliklər edə bilməz (əgər həmin pəncərələr müxtəlif domendən və portdan gəlir və ya fərqli protokollardan istifadə edirsə). 
 
     Bu "Eyni mənşə siyasəti" (Same Origin Policy) adlanır. Bunu həyata keçirmək üçünsə, hər iki səhifə məlumat mübadiləsi üçün zəruri olan xüsusi skriptləri icra etməlidirlər.
 
@@ -80,9 +80,9 @@ Bu məhdudiyyətlərə nümunə kimi aşağıdakıları göstərmək olar:
 
 ![](limitations.png)
 
-Qeyd edək ki, bu cür məhdudiyyətlər yalnız brauzer daxilində mövcuddur. 
+Qeyd edək ki, bu cür məhdudiyyətlər yalnız brauzer daxilində mövcuddur. NodeJs və ya digər mühitlərdə bu cür məhdudiyyətlər mövcud deyil.
 
-## JavaScripti ünikal edən nədir?
+## JavaScripti unikal edən nədir?
 
 JavaScript dilini əvəzedilməz edən ən az *üç* cəhət var:
 
@@ -111,12 +111,11 @@ Müasir ələtlər vasitəsilə bu cür transpilyasiya mərhlələri olduqca sü
 
 Bu cür dillərə aşağıdakıları misal çəkmək olar:
 
-- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [CoffeeScript](http://coffeescript.org/) JavaScript üçün sintaktik şəkərdir (syntactic sugar). 
-- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps). It was initially offered by Google as a replacement for JavaScript, but as of now, browsers require it to be transpiled to JavaScript just like the ones above.
+- [CoffeeScript](http://coffeescript.org/) JavaScript üçün sintaktik şəkərdir (syntactic sugar). Onun qısa sintaksisi proqramçılara daha aydın və səliqəli kod yazmaq imkanı yaradır. Adətən Ruby developerlər bu dili çox sevir.
+- [TypeScript](http://www.typescriptlang.org/) Microsoft tərəfindən yaradılmışdır və inkişaf etdirilir. Bildiyimiz kimi JavaScript dinamik data tiplərə malik dildir. TypeScript isə statik data tiplərlə işləmək imkanın yaradır. Bu həm iri həcmli layihələrdə həm də optimallaşdırmada proqram tərtibatçılarının köməyinə çatır.
+- [Dart](https://www.dartlang.org/) özünə məxsus mühərriki olan və qeyri-brauzer mühitlərdə (misalçün mobil) icra oluna bilən müstəqil dildir. İlkin mərhələlərdə bu dil Google tərəfindən JavaScriptin əvəzedicisi olaraq təklif edilmişdir, lakin hazırda brauzerlər yuxarıda qeyd etdiyimiz dillər kimi, bu dilin JavaScriptə çevrilməsini tələb edir. 
 
-There are more. Of course, even if we use one of these languages, we should also know JavaScript to really understand what we're doing.
+Siyahı sadəcə bununla kifayətlənmir, əlbəttə ki, bu cür dillərdən daha çox var. Biz onları istifadə eləsək də, həqiqətən nə etdiyimizi başa düşmək üçün JavaScripti bilmək mütləqdir.
 
 ## Xülasə
 
