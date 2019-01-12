@@ -1,59 +1,59 @@
 
 # Tərtibatçı konsolu
 
-Code is prone to errors. You will quite likely make errors... Oh, what am I talking about? You are *absolutely* going to make errors, at least if you're a human, not a [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)).
+Kod xətayalara meyillidir. Çox güman ki, siz də bəzən səhvlər edəcəksiniz... Çox güman ki?! Yox, əgər robot deyilsinizsə, siz *mütləq* səhvlər edəcəksiniz.
 
-But in the browser, users don't see errors by default. So, if something goes wrong in the script, we won't see what's broken and can't fix it.
+Lakin brauzer mühitində istifadəçilər baş vermiş xətaları görmürlər. Yəni əgər yazdığınız skriptdə nəsə qaydasında deyilsə, problemin nədə olduğunu bilə bilməyəcəksiniz və problemi bilmədən onu həll etmək də olmayacaq.
 
-To see errors and get a lot of other useful information about scripts, "developer tools" have been embedded in browsers.
+Xətaları görmək və yazdığımız skriptlər haqqında digər məlumatlar əldə etmək üçün brauzerlərin tərkibində "tərtibatçı alətləri" mövcuddur.
 
-Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing "catch-up" to Chrome or Firefox. So most developers have a "favorite" browser and switch to others if a problem is browser-specific.
+Əksər proqramçılar bu cür alətlər üçün Chrome və Firefoxa arxalanır, çünki bu brauzerlər ən yaxşı tərtibarçı alətlərini təklif edir. Digər brauzerlər isə bəzən yeni xüsusiyyətlər irəli sürsələr də əksər hallarda Chrome və Firefox ilə eyni imkanlar irəli sürürlər. Yəni əksər proqramçıların "sevimli" brauzerləri var, yalnız problem brauzer spesifik olduğu halda digər brauzerlər keçir edirlər.
 
-Developer tools are potent; they have many features. To start, we'll learn how to open them, look at errors, and run JavaScript commands.
+Tərtibatçı alətləri güclüdürlər; onların çoxlu sayda xüsusiyyətləri var. Başlanğıc üçün, biz onları necə açmağı, xətalara necə baxmağı və sadə JavaScript komandaları icra etməyi öyrənəcəyik.
 
 ## Google Chrome
 
-Open the page [bug.html](bug.html).
+[bug.html](bug.html) səhifəsini açın.
 
-There's an error in the JavaScript code on it. It's hidden from a regular visitor's eyes, so let's open developer tools to see it.
+Açdığınız səhifədə kiçik bir xəta mövcuddur. Lakin bu xəta ziyarətçidən gizlədilmişdir, gəlin tərtibatçı alətlərini açaq və xətanın nə olduğunu araşdıraq.
 
-Press `key:F12` or, if you're on Mac, then `key:Cmd+Opt+J`.
+Bunun üçün `key:F12` düyməsini sıxın, əgər Mac istifadəçisinizsə, onda `key:Cmd+Opt+J`.
 
-The developer tools will open on the Console tab by default.
+Tərtibatçı alətləri defolt olaraq Developer Konsolu açacaq.
 
-It looks somewhat like this:
+Aşağıdakı kimi pəncərə görəcəksiniz:
 
 ![chrome](chrome.png)
 
-The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar.
+Tərtibatçı alətlərinin dəqiq görünüşü sitifadə etdiyiniz Chrome-un versiyasında asılıdır. Görünüş vaxt keçdikcə dəyişə bilər ancaq sonda eyni təəssüratı yaradır.
 
-- Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
-- On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
+- Konsolda biz qırmızı ilə yazılmış xətanın detallarını görə bilirik. Bu halda, xəta bizə bilinməyən "lalala" komandasının işləndiyini deyir.
+- Sağ tərəfdə isə kliklənə bilən `bug.html:12` yazısını görürük. Onun üstünə kliklədiyimizdə bizi xətanın hansı faylda və hansı sətirdə baş verdiyini görə bilərik.
 
-Below the error message, there is a blue `>` symbol. It marks a "command line" where we can type JavaScript commands. Press `key:Enter` to run them (`key:Shift+Enter` to input multi-line commands).
+Xətadan aşağıda isə mavi rəngdə `>` simvolunu görəcəksiniz. Bu işarə "komanda sətirini" işarə edir və orada JavaScript komandalarını icra edə bilərik. İstədiyiniz skripti yazdıqdan sonra `key:Enter` düyməsinə basın (bir neçə sətir yazmaq üçün `key:Shift+Enter` basın).
 
-Now we can see errors, and that's enough for a start. We'll come back to developer tools later and cover debugging more in-depth in the chapter <info:debugging-chrome>.
+İndi biz öz səhvlərimizi görə bilirik, bu başlanğıc üçün kifayətdir. Bu mövzuda daha ətraflı sonrakı bölmələrdə danışacağıq.
 
 
-## Firefox, Edge, and others
+## Firefox, Edge, və başqaları
 
-Most other browsers use `key:F12` to open developer tools.
+Əksər brauzerlər tərtibatçı alətlərini `key:F12` düyməsi ilə açırlar.
 
-The look & feel of them is quite similar. Once you know how to use one of these tools (you can start with Chrome), you can easily switch to another.
+Yerdə qalan görünüş və funksionallıqlar demək olar ki, eynidir. Bu alətlərlə hər hansı biz brauzerdə kifayət qədər təcrübə topladıqdan sonra rahatlıqla digərlərinə keçid edə bilərsiniz. Başlağız üçün Chromedan istifadə etməyiniz məsləhətlidir.
 
 ## Safari
 
-Safari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the "Develop menu" first.
+Safari (Mac brauzerdir, Windows/Linux tərəfindən dəstəklənmir) bir qədər fərqlidir. Əvvəlcə "Develop menu" seçimini aktivləşdirmək lazımdır.
 
-Open Preferences and go to the "Advanced" pane. There's a checkbox at the bottom:
+Bunun üçün Preferences menyusundan "Advanced" panelini seçək lazımdır. Ən aşağıda bir checkbox görəcəksiniz:
 
 ![safari](safari.png)
 
-Now `key:Cmd+Opt+C` can toggle the console. Also, note that the new top menu item named "Develop" has appeared. It has many commands and options.
+İndi isə konsolu açmaq üçün `key:Cmd+Opt+C` basın. Onu da nəzərdən qaçırmayın ki, yuxadırda "Develop" adlı yeni bir menyu meydana gəlmişdir, ondan istifadə edib, bir çox xüsusiyyətlərindən yarana bilərsiniz.
 
-## Summary
+## Xülasə
 
-- Developer tools allow us to see errors, run commands, examine variables, and much more.
-- They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
+- Tərtibatçı alətləri bizə səhvləri görmək, komandalar icra etmək və başqa bir çox imkanlar yaradır.
+- Onlardan istifadə etmək üçün əksər brauzerlərdə `key:F12` düyməsini sıxmaq lazımdır. Mac üçün Chromda `key:Cmd+Opt+J`, Safaridə isə `key:Cmd+Opt+C` düyməsindən istifadə etmək lazımdır (aktivəşdirdikdən sonra).
 
-Now we have the environment ready. In the next section, we'll get down to JavaScript.
+Artıq mühit haqqında kifayət qədər məlumatımız olduğu üçün növbəti bölmədə JavaScripti özünü öyrənməyə başlayacağıq.
