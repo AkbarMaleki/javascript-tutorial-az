@@ -47,11 +47,11 @@ JavaScript kodları `<script>` etiketin daxilində yerləşir və brauzer etiket
 `type` attributu: <code>&lt;script <u>type</u>=...&gt;</code>
 : Əvvəlki HTML standartları, HTML4, skriptlərin tipinin olmasını tələb edirdi və çox hallarda bu `type="text/javascript"` olurdu. Bu attributun yazılması artıq tələb olunmur. Yeni HTML standartları, HTML5, bu attributun mənasını tamamilə dəyişmişdir və onu başqa məqsədlər üçün istifadə edir. Hazırda bu attributu JavaScript modulları üçün istifadə edə bilərsiniz. JavaScript modulları haqqında növbəti fəsillərdə öyrənəcəyik.
 
-The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
-: This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
+`language` attributu: <code>&lt;script <u>language</u>=...&gt;</code>
+: Bu attribut skriptin dilini təyin etmək üçün yazılır. JavaScript brauzerdə defolt dil sayıldığı üçün artıq bu attributa ehtiyac qalmayıb. Onu istifadə etmək üçün heç bir səbəb yoxdur.
 
-Comments before and after scripts.
-: In really ancient books and guides, you may find comments inside `<script>` tags, like this:
+Srkiptdən əvvəl və sonra rəylər.
+: Çox köhnə kitablarda `<script>` daxilində rəylərin qeyd olunmasını aşağıdakı kimi görə bilərsiniz:
 
     ```html no-beautify
     <script type="text/javascript"><!--
@@ -59,30 +59,30 @@ Comments before and after scripts.
     //--></script>
     ```
 
-    This trick isn't used in modern JavaScript. These comments hid JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
+    Bu cür rəylər artıq skirptlərdə istifadə olunmur. Əvvəllər bu rəylər `<script>` etiketini dəstəkləməyən brauzerlər üçün yazılırdı ki, brauzer sözügedən skripti emal etməsin. Lakin artıq son 15 ildə belə bir problem olmadığı üçün bu cür rəylər heç bir əhəmiyyət kəsb etmir.
 
 
-## External scripts
+## Xarici skriptlər
 
-If we have a lot of JavaScript code, we can put it into a separate file.
+Çoxlu JavaScript kodlarımız olduğu təqdirdə, bu kodları başqa bir fayla yerləşdirə bilərik.
 
-Script files are attached to HTML with the `src` attribute:
+Skript faylları HTML səhifəyə `src` attributu vasitəsilə bağlanır:
 
 ```html
 <script src="/path/to/script.js"></script>
 ```
 
-Here, `/path/to/script.js` is an absolute path to the script file (from the site root).
+Yuxarıda gördüyünüz şəkildə `/path/to/script.js` skriptin yerləşdiri qovluğun tam yoludur. 
 
-You can also provide a relative path from the current page. For instance, `src="script.js"` would mean a file `"script.js"` in the current folder.
+`"script.js"` faylı web səhifəmizin yerləşdiyi qovluqdadırsa, onu `src="script.js"` şəklində də daxil edə bilərik.
 
-We can give a full URL as well. For instance:
+Bununla bərarbər biz skriptin tam URL-ini də daxil edə bilərik:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
 ```
 
-To attach several scripts, use multiple tags:
+Bir neçə skripti səhifəyə qoşmaq üçün, o qədər də `<script>` etiketindən istifadə etmək lazımdır:
 
 ```html
 <script src="/js/script1.js"></script>
@@ -91,13 +91,11 @@ To attach several scripts, use multiple tags:
 ```
 
 ```smart
-As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+Bir qayda olaraq, sadəcə çox sadə skriptlər bir başa olaraq HTML səhifəyə daxil edilir. Daha mürəkkəb və qarışıq skriptlət başqa fayllarda saxlanılır.
 
-The benefit of a separate file is that the browser will download it and store it in its [cache](https://en.wikipedia.org/wiki/Web_cache).
+Bunun bir xeyir də ondadır ki, brauzerlər bu cür faylları yükləyib öz [keş](https://en.wikipedia.org/wiki/Web_cache) lərində saxlayırlar və beləliklə eyni fayl hər dəfə istifadəçinin qurğusuna yüklənmir.
 
-Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
-
-That reduces traffic and makes pages faster.
+Bu yolla trafiki azalda və səhifəmizi daha sürətli edə bilərik.
 ```
 
 ````warn header="If `src` is set, the script content is ignored."
