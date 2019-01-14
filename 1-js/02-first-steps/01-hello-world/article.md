@@ -1,10 +1,10 @@
-# Salam, Dünya! (Hello, world!)
+# Salam, Dünya!
 
-The tutorial that you're reading is about core JavaScript, which is platform-independent. Later on, you'll learn about Node.JS and other platforms that use it.
+Oxuduğunuz dərslik platformadan asılı olmayaraq, JavaScriptin sırf özündən bəhs edir. Daha sonra biz Node.JS və JavaScripti istifadə edən digər platformalarla da tanış olacağıq.
 
-But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We'll keep the amount of browser-specific commands (like `alert`) to a minimum so that you don't spend time on them if you plan to concentrate on another environment (like Node.JS). We'll focus on JavaScript in the browser in the [next part](/ui) of the tutorial.
+Skriptləri işə salmaq üçün bizə bir mühit lazımdır. Dərsliyimizin onlayn olduğunu nəzərə alsaq, bunun üçün ən yaxşı mühit brauzerdir. Sizin başqa mühitlərlə maraqlanacağınızı da nəzərə alaraq, brauzer spesifik komandaları (misalçün `alert`) minimum istifadə etməyə çalışacağıq. Brauzer daxili JavaScript haqqında isə [növbəti hissədə](/ui) öyrənəcəyik.
 
-So first, let's see how we attach a script to a webpage. For server-side environments (like Node.JS), you can execute the script with a command like `"node my.js"`.
+Əvvəlcə, gəlin skripti web səhifəyə necə bağlayacağımıza baxaq. Əgər server mühitindən istifadə edirsinizsə (misalçün Node.JS) skriptinizi `node my.js` komandasını daxil edərək işə sala bilərsiniz.
 
 
 ## "script" etiketi
@@ -35,18 +35,17 @@ Misalçün:
 ```
 
 ```online
-You can run the example by clicking the "Play" button in the right-top corner of the box above.
+Yuxarıdakı nümunəni işə salmaq üçün qutunun sağ yuxarı küncündəki "Play" düyməsini sıxın.
 ```
+JavaScript kodları `<script>` etiketin daxilində yerləşir və brauzer etiketi emal etdiyi zaman, skitptlər də işə düşür.
 
-The `<script>` tag contains JavaScript code which is automatically executed when the browser processes the tag.
 
+## Müasir markap
 
-## Modern markup
+`<script>` etiketinin hazırda nadir hallarda işlənilən bəzi attributları mövcuddur. Onlarla köhnə kodlarda rastlaşa bilərsiniz:
 
-The `<script>` tag has a few attributes that are rarely used nowadays but can still be found in old code:
-
-The `type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
-: The old HTML standard, HTML4, required a script to have a `type`. Usually it was `type="text/javascript"`. It's not required anymore. Also, the modern HTML standard, HTML5, totally changed the meaning of this attribute. Now, it can be used for JavaScript modules. But that's an advanced topic; we'll talk about modules in another part of the tutorial. 
+`type` attributu: <code>&lt;script <u>type</u>=...&gt;</code>
+: Əvvəlki HTML standartları, HTML4, skriptlərin tipinin olmasını tələb edirdi və çox hallarda bu `type="text/javascript"` olurdu. Bu attributun yazılması artıq tələb olunmur. Yeni HTML standartları, HTML5, bu attributun mənasını tamamilə dəyişmişdir və onu başqa məqsədlər üçün istifadə edir. Hazırda bu attributu JavaScript modulları üçün istifadə edə bilərsiniz. JavaScript modulları haqqında növbəti fəsillərdə öyrənəcəyik.
 
 The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
 : This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
@@ -124,7 +123,7 @@ The example above can be split into two scripts to work:
 ```
 ````
 
-## Summary
+## Xülasə
 
 - We can use a `<script>` tag to add JavaScript code to a page.
 - The `type` and `language` attributes are not required.
