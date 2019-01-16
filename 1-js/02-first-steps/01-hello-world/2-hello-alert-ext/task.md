@@ -2,8 +2,8 @@ importance: 5
 
 ---
 
-# Show an alert with an external script
+# Başqa bir faylda yazlımış skript vasitəsi ilə istifadəçiyə mesaj göstərin
 
-Take the solution of the previous task <info:task/hello-alert>. Modify it by extracting the script content into an external file `alert.js`, residing in the same folder.
+Əvvəlki tapşırığın həllini istifadə edin. Səhifədəki skriptləri ayıraraq, `alert.js` adlı bir fayla yazın və onu HTML səhifəyə daxil edin.
 
-Open the page, ensure that the alert works.
+Səhifəni açın və kodunuzun işlədiyindən əmin olun.

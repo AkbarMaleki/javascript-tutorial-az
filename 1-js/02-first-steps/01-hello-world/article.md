@@ -98,20 +98,20 @@ Bunun bir xeyir də ondadır ki, brauzerlər bu cür faylları yükləyib öz [k
 Bu yolla trafiki azalda və səhifəmizi daha sürətli edə bilərik.
 ```
 
-````warn header="If `src` is set, the script content is ignored."
-A single `<script>` tag can't have both the `src` attribute and code inside.
+````warn header="`src` təyin olunduğu halda, skriptin məzmunu nəzərə alınmır."
+Bir `<script>` etiketində eyni zamanda `src` attributu və daxili skript ola biklməz.
 
-This won't work:
+Misalçün aşağıdakı skript işləməyəcək:
 
 ```html
 <script *!*src*/!*="file.js">
-  alert(1); // the content is ignored, because src is set
+  alert(1); // src təyin olunduğu üçün məzmun nəzərə alınmır
 </script>
 ```
 
-We must choose either an external `<script src="…">` or a regular `<script>` with code.
+Bunun üçün xarici `<script src="…">` yoxsa müntəzəm `<script>` işlədəcəyimizi əvvəlcədən müəyyənləşdirməliyik.
 
-The example above can be split into two scripts to work:
+Yuxarıdakı nümunə normal qaydada işləməsi üçün iki hissəyə bölünə bilər:
 
 ```html
 <script src="file.js"></script>
@@ -123,9 +123,8 @@ The example above can be split into two scripts to work:
 
 ## Xülasə
 
-- We can use a `<script>` tag to add JavaScript code to a page.
-- The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+- Səhifəyə JavaScript kodlarını daxil etmək üçün `<script>` etiketindən istifadə edirik.
+- `type` və `language` attributları artıq istifadə olunmur.
+- Başqa bir faylda olan skripti səhifəyə daxil etmək üçün `<script src="path/to/script.js"></script>` istifadə edirik.
 
-
-There is much more to learn about browser scripts and their interaction with the webpage. But let's keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn't distract ourselves with browser-specific implementations of it. We'll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
+Brzuer srkiptləri və onları web səhifələr ilə qarşılıqlı əlaqələri ilə bağlı öyrənməli olduqca çox şey var. Amma yadda saxlayaq ki, dərsliyin bu hissəsi sırf JavaScript dilinin özünə həsr edilmişdir. Bu səbəbdən, brauzer spesifik xüsusiyyətlərlə başımızı qarışdırmamaq daha yaxşı olar. Biz brazueri sadəcə olaraq JavaScript kodlarını icra etmək üçün istifadə edəcəyik, çünki bu onlayn oxuyanlar üçün olduqca rahatdır.

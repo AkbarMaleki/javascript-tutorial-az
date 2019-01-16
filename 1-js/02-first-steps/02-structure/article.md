@@ -1,4 +1,4 @@
-# Code structure
+# Kod strukturu
 
 The first thing we'll study is the building blocks of code.
 
